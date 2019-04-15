@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Guess the number game</title>
+     <link rel="stylesheet" href="style.css">
+
+  </head>
+    <body onload="init()">
+     
+    <div id="container">
+      <div class="panel">
+       <h2>Vain Numerot</h2> <br> 1-100</h2>
+
+        <h3>kokeile tuuriasi!</h3><hr>
+
+        <p>perus moodi 10 kokeilua: </p>
+        <button id="easyBtn" onclick="easyMode()" class="" >Perus: 10 arvausta!</button>
+        
+        <button id="newGameButton" onclick="newGame()">NEW GAME</button>
+    </div>
+ 
+     <div class="panel">
+       <h3 id="text0utput">kirjoita arvaus tänne! &amp; </h3>
+       
+       <input type="number"  id="inputBox" onchange="compareGuess()">
+       <p>vanhat arvaukset: <span id="attempts"></span></p>
+
+     </div>
+        
+     <div Class="panel" >
+      <P>vanhat numerot;</P>
+     <P id="guessLog"></P>
+     </div>
+
+    </div>
+    <script src="script.js"></script>
+</body> 
+
+ 
+</body> 
+</html>
+
